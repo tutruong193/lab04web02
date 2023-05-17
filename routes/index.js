@@ -2,11 +2,9 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+
 //render ra form input
-router.get('/input', function(req, res){
+router.get('/', function(req, res){
   res.render('input');
 });
 //lay du lieu tu input
