@@ -23,4 +23,18 @@ router.post('/output', function(req, res){
   //c2res.render('output',{name: ten, email : email, age : tuoi, bod: ngaysinh});
 });
 
+router.get('/login', function(req, res){
+  res.render('login');
+})
+router.post('/check', function(req, res){
+    var account = req.body;
+    if (account.username == 'admin' && account.password == 'admin'){
+      res.render('check',{title: "Successfully"});
+      res.send("<h1>Ok</h1>")
+    } else {
+      res.render('check',{title: "Failed"})
+      res.send("<h1>Error</h1>")
+    };
+})
+
 module.exports = router;
