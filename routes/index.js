@@ -10,10 +10,10 @@ router.get('/', function(req, res){
 //lay du lieu tu input
 router.post('/output', function(req, res){
   var student = req.body;
-  var tuoi = req.query.tuoi;
-  var ten = req.query.ten;
-  var email = req.query.email;
-  var ngaysinh = req.query.ngaysinh;
+  // var tuoi = req.query.tuoi;
+  // var ten = req.query.ten;
+  // var email = req.query.email;
+  // var ngaysinh = req.query.ngaysinh;
   //in ra consolelog
   // console.log(req.body);
   // //in ra web voi res.send
